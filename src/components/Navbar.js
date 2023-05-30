@@ -5,6 +5,13 @@ export default function Navbar()
     return (
     <header className="bg-gray-800 md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a href="#about">
+            <img
+                alt="logo"
+                src = {process.env.PUBLIC_URL + "/logo192.png"}
+                className = "h-8 w-8 rounded-full flex items-center justify-center mr-2">
+            </img>
+        </a>
         <a className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
             Lunar Blossom
