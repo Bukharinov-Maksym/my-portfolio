@@ -7,12 +7,12 @@ export default function Projects()
     return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-          <div className="flex flex-col w-full mb-20">
-            <CodeIcon className="mx-auto inline-block w-10 mb-4" />
+          <div className="flex flex-col w-full mb-10">
+            <CodeIcon className="mx-auto inline-block w-10 mb-4 text-main-green" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
               Games I've Created
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-testimonial-text">
             I have developed a diverse portfolio of video games that span various genres, from action-packed
             adventures to mind-bending puzzles. With a keen eye for detail and a passion for immersive storytelling,
             my projects offer engaging gameplay experiences that captivate players and transport them into unique virtual worlds.
@@ -31,13 +31,13 @@ export default function Projects()
                     src={project.image}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-main-green mb-1">
                       {project.subtitle}
                     </h2>
                     <h1 className="title-font text-lg font-medium text-white mb-3">
                       {project.title}
                     </h1>
-                    <p className="leading-relaxed">{project.description}</p>
+                    <p className="leading-relaxed text-testimonial-text">{project.description}</p>
                   </div>
                 </div>
               </a>
